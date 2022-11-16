@@ -1,0 +1,79 @@
+/* Materiales */ 
+
+
+.botonesMateriales{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.botonesMateriales img{
+    width: 100%;
+    height: 500px;
+}
+
+.tituloMateriales{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.descMateriales{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.fotosGaleria{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 20px;
+}
+
+.fotosGaleria img {
+    height: 500px;
+    width: 500px;
+}
+
+.fotosGaleria img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+
+}
+
+@media only screen and (max-width: 500px){
+    .navbar-nav{
+        background-color: #002a53;
+    }
+    
+    .botonesMateriales img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .fotosGaleria{
+    display: flex;
+    flex-flow: column;
+    }
+
+    .fotosGaleria img{
+        width: 80%;
+        height: 80%;
+    }
+
+    footer {
+        background-color: #002a53;
+        font-size: 12px;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+    footer div {
+        margin-left: 40px;
+        
+    }
+    footer ul {
+        font-size: medium;
+        margin-left: 10px;
+    }
+}
